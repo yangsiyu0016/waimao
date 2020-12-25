@@ -1,0 +1,101 @@
+drop table if exists product;
+
+/*==============================================================*/
+/* Table: product                                               */
+/*==============================================================*/
+create table product 
+(
+   id                   varchar(200)                    not null,
+   cname                varchar(20)                    null,
+   ename                varchar(20)                    null,
+   type                 numeric(5)                     null,
+   price                decimal(20)                    null,
+   star_level           numeric(5)                     null,
+   product_desc         varchar(200)                   null,
+   extra_info           varchar(200)                   null,
+   summary              varchar(200)                   null,
+   help                 varchar(200)                   null,
+   img1                 varchar(100)                   null,
+   img2                 varchar(100)                   null,
+   img3                 varchar(100)                   null,
+   constraint PK_PRODUCT primary key clustered (id)
+);
+drop table if exists article;
+
+/*==============================================================*/
+/* Table: article                                               */
+/*==============================================================*/
+create table article 
+(
+   id                   varchar(200)                    not null,
+   title                varchar(100)                   null,
+   article_comment      varchar(1000)                  null,
+   release_date         date                           null,
+   pv                   decimal                        null,
+   image                varchar(100)                   null,
+   constraint PK_ARTICLE primary key clustered (id)
+);
+drop table if exists user_message;
+
+/*==============================================================*/
+/* Table: user_message                                          */
+/*==============================================================*/
+create table user_message 
+(
+   id                   varchar(200)                    not null,
+   name                 varchar(50)                    null,
+   email                varchar(100)                   null,
+   phone                varchar(20)                    null,
+   user_message         varchar(500)                   null,
+   operate_time         time                           null,
+   constraint PK_USER_MESSAGE primary key clustered (id)
+);
+
+drop table if exists team;
+
+/*==============================================================*/
+/* Table: team                                                  */
+/*==============================================================*/
+create table team 
+(
+   id                   varchar(200)                    not null,
+   name                 varchar(20)                    null,
+   title                varchar(20)                    null,
+   team_desc            varchar(200)                   null,
+   img                  varchar(100)                   null,
+   constraint PK_TEAM primary key clustered (id)
+);
+drop table if exists contact;
+
+/*==============================================================*/
+/* Table: contact                                               */
+/*==============================================================*/
+create table contact 
+(
+   id                   varchar(200)                    not null,
+   title                varchar(20)                    null,
+   value                varchar(200)                   null,
+   constraint PK_CONTACT primary key clustered (id)
+);
+drop table if exists admin;
+
+/*==============================================================*/
+/* Table: admin                                                 */
+/*==============================================================*/
+create table admin 
+(
+   id                   varchar(200)                    not null,
+   user_name            varchar(100)                   null,
+   password             varchar(100)                   null,
+   constraint PK_ADMIN primary key clustered (id)
+);
+drop table if exists product_type;
+
+/*==============================================================*/
+/* Table: product_type                                          */
+/*==============================================================*/
+create table product_type 
+(
+   id                   varchar(200)                    null,
+   type                 varchar(100)                   null
+);

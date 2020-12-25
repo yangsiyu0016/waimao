@@ -1,0 +1,11 @@
+2020-12-24 15:20:38.399  INFO 36856 --- [main] com.wg.waimao.WaimaoApplication          : Starting WaimaoApplication using Java 1.8.0_102 on LAPTOP-F5AJPVC3 with PID 36856 (E:\软件开发\waimao\target\classes started by zhanghaicheng in E:\软件开发\waimao)
+2020-12-24 15:20:38.402  INFO 36856 --- [main] com.wg.waimao.WaimaoApplication          : No active profile set, falling back to default profiles: default
+2020-12-24 15:20:39.757  INFO 36856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-12-24 15:20:39.767  INFO 36856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-24 15:20:39.767  INFO 36856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-24 15:20:39.847  INFO 36856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-24 15:20:39.848  INFO 36856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1390 ms
+2020-12-24 15:20:40.414  INFO 36856 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-24 15:20:40.666  WARN 36856 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-12-24 15:20:40.773  INFO 36856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-12-24 15:20:40.785  INFO 36856 --- [main] com.wg.waimao.WaimaoApplication          : Started WaimaoApplication in 2.754 seconds (JVM running for 3.141)
